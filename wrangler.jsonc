@@ -1,11 +1,13 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "global-negotia",
-  "main": "src/worker.js",
+  "main": "./worker.js",
   "compatibility_date": "2026-10-12",
   "assets": {
-    "directory": "./public",
+    "directory": ".",
     "binding": "ASSETS",
-    "run_worker_first": ["/api/*"]
+    "run_worker_first": [
+      "/api/*"
+    ]
   }
 }
